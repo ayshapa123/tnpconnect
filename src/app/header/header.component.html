@@ -1,0 +1,51 @@
+<header class=" bg-white d-flex head">
+    
+    <div class="img1 "><img src="../../assets/Group 2.png">
+    </div>
+    <!-- <div class="cont"> -->
+        <div class="headbox d-flex ">
+
+            <div [ngClass]="hoverOrClick.home?'enable':'box'">
+                <i class="fa fa-home " (mouseenter)="showhome=true" (mouseleave)="showhome=false"
+                    (click)="selected('home')">
+                    <span class="ms-2" *ngIf="showhome || hoverOrClick.home" style="font-family: 'Times New Roman', Times, serif;">Home</span></i>
+
+            </div>
+            <div [ngClass]="hoverOrClick.community?'enable':'box'" (mouseenter)="showcommunity=true"
+            (mouseleave)="showcommunity=false" (click)="selected('community')">
+
+                <i class="fa fa-users" aria-hidden="true" ></i>
+                <span class="ms-2" *ngIf=" showcommunity || hoverOrClick.community">Community</span>
+                <!-- <i class="fa fa-users" aria-hidden="true"></i>  -->
+            </div>
+            <div [ngClass]="hoverOrClick.events?'enable':'box'" (mouseenter)="showevents=true"
+                (mouseleave)="showevents=false" (click)="selected('events')">
+
+                <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                <span class="ms-2" *ngIf="showevents || hoverOrClick.events">Events</span>
+
+            </div>
+            <input type="text" name="text" placeholder="Search for People,Posts,Communities,Events....."
+            class="icon search">
+        </div>
+
+
+
+
+
+        <div class="left d-flex ms-2">
+       
+        <div class="box" tabindex="0"><i class="fa fa-comment-o" aria-hidden="true"></i></div>
+        <div class="box ms-4" tabindex="0"><i class="fa fa-bell" aria-hidden="true"></i></div>
+        <div class="img3 d-flex ms-4">
+            <span >Sonu</span>
+            <div><img src="../../assets/Ellipse 5sonu.png"></div>
+        </div>
+    </div> 
+
+       
+    <!-- </div> -->
+
+
+
+</header>

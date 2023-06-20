@@ -1,0 +1,61 @@
+.main{
+    width: auto;
+    background-color:white;
+    height: auto;
+    border-radius: 15px;
+    margin:38px 10px;
+
+}
+.parent{
+    position:relative;
+}
+.img1{
+    width:auto;
+    height: 167%;
+    justify-content: center;
+    position: relative;
+}
+.img2{
+    width:50%;
+    /* justify-content: center; */
+    position: absolute;
+    top: 86px;
+    margin-left: 58%;
+    /* left: 30px;; */
+}
+.namebox{
+    height: 0%;
+    text-align: center;
+}
+.post{
+    border-radius: 9px;
+    color: #91C024;
+        border:2px solid;
+        justify-content: center;
+        text-align: center;
+        width: auto;
+        height: auto;
+        
+}
+.po{
+    margin: 0%;
+    padding: 0%;
+}
+.time{
+    text-align: center;
+    justify-content: center;
+}
+.num{
+    margin-top: 3%;
+    border-radius: 12%;
+    width: 43px;
+    height: 46px;
+    background-color: rgb(233, 235, 238);
+    text-align: center;
+    justify-content: center;
+
+}
+.add{
+    margin-top: 20%;
+    margin-bottom: 0%;
+}

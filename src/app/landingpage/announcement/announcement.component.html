@@ -1,0 +1,84 @@
+
+<div class="main  container   justify-content-between  mt-5 " >
+<div class="d-flex">
+    <span style="color: rgba(0, 0, 0, 0.25);">Announcements</span>
+    <img class="ms-2" src="../../assets/Group 12.png">
+</div>
+    
+     <div class=" anno container" *ngFor="let p of post">
+        <div><p class="header">{{p.team}}</p></div>
+        <p class="dur">{{p.time}}min ago</p>
+        <div>
+        <div [ngClass]="{'enable':isEnabled}">
+        <p class="content1">{{p.content}}</p>
+    </div> 
+</div>
+    <a (click)="more()">{{m}}</a> 
+     </div>
+    
+     
+     <div class="MainCom">
+    <div class="d-flex"><span style="color: rgba(0, 0, 0, 0.25);">Community</span>
+        <img class="ms-2" src="../../assets/Group 13.png"></div> 
+     <div class="commu d-flex">
+        <div class="name"><img class="ellipse " src="../../assets/Ellipse 7.png">
+            <span class="ms-2">TNP_India</span></div>
+        <div class="member"><span>120+</span></div>
+
+        
+    
+    </div>
+    <div class="commu d-flex ">
+        <div class="name"><img class="ellipse " src="../../assets/Ellipse 8.png">
+            <span class="ms-2">Digital_Team</span></div>
+        <div class="member1"><span>280+</span></div>
+    
+    </div>
+    <div class="commu d-flex ">
+        <div class="name"><img class="ellipse " src="../../assets/Ellipse 9.png">
+            <span class="ms-2">Team_Metaverse</span></div>
+        <div class="member2"><span>100+</span></div>
+    
+    </div>
+</div>
+    <div class="Mainevent">
+       <div class="d-flex"><span style="color: rgba(0, 0, 0, 0.25);">Upcoming Events</span>
+        <img class="ms-2" src="../../assets/Group 14.png"></div> </div> 
+<div class="date d-flex mb-4  ">
+<div>
+    <div class="eventname">TNP India<span class="pgm ms-2">Webinar</span></div> 
+    <div class="eventcontent"><p class="font">In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since.</p></div>
+</div> 
+<div class="circle mb-2 mt-2">
+    <h5>21</h5>
+    <p>April</p>
+</div>
+
+
+</div>
+<div class="date1 d-flex mb-4  ">
+    <div>
+        <div class="eventname">TNP India<span class="pgm ms-2">Webinar</span></div> 
+        <div class="eventcontent"><p class="font">In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since.</p></div>
+    </div> 
+    <div class="circle mb-2 mt-2">
+        <h5>21</h5>
+        <p>April</p>
+    </div>
+    
+    
+    </div>
+    <div class="date2 d-flex mb-4  ">
+        <div>
+            <div class="eventname">TNP India<span class="pgm ms-2">Webinar</span></div> 
+            <div class="eventcontent"><p class="font">In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since.</p></div>
+        </div> 
+        <div class="circle mb-2 mt-2">
+            <h5>21</h5>
+            <p>April</p>
+        </div>
+        
+        
+        </div>
+    </div>
+

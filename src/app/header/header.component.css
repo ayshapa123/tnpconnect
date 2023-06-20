@@ -1,0 +1,227 @@
+/* .cont{
+    gap:60px;
+    justify-content: space-evenly;
+    display: flex;
+    flex-basis: 80%;
+} */
+
+.head{
+width: 100%;
+height: 90px;
+/* justify-content: space-around; */
+align-items: center;
+box-shadow: 0px 1px 40px rgba(0, 0, 0, 0.05);
+display: flex;
+}
+.img1{
+    /* flex: 2; */
+width: 22%;
+height: 43px;
+left: 55px;
+top: 18px;
+margin-left: 55px;
+border: none;
+}
+.new{
+    
+    /* border: 3px solid rgb(217, 193, 193); */
+    border-radius: 10px;
+    /* background-color: #91C024; */
+    background-color: #eaede1;
+
+   width: 45px; 
+   height: 26px;
+    text-align: center;
+    padding-top: 0%;
+     padding-left: 3px; 
+    list-style: none;
+    /* background-color: green; */
+    height: 26px;
+/* padding: 0%; */
+justify-content: center;
+    
+}
+
+ 
+
+.box{
+    
+    border-radius: 40px;
+    color: rgb(21, 24, 21);
+    background-color: rgba(41, 80, 81, 0.05);
+    width:auto;
+    height:40px;
+    margin:auto;
+    padding-inline:10px;
+    justify-content: space-evenly;
+    display: flex;
+    /* gap: 5px; */
+    align-items: center;
+}
+.box1{
+    
+    /* border: 3px solid rgb(217, 193, 193); */
+    border-radius: 10px;
+    background-color: rgb(193, 206, 192);
+   width: 225px; 
+   height: 26px;
+    text-align: center;
+    padding-top: 2%;
+     padding-left: 3px; 
+    list-style: none;
+    /* background-color: green; */
+    height: 26px;
+/* padding: 0%; */
+justify-content: center;
+    
+}
+.box2{
+    
+    /* border: 3px solid rgb(217, 193, 193); */
+    border-radius: 10px;
+    background-color: rgb(191, 199, 190);
+   width: 225px; 
+   height: 26px;
+    text-align: center;
+    padding-top: 2%;
+     padding-left: 3px; 
+    list-style: none;
+    /* background-color: green; */
+    height: 26px;
+/* padding: 0%; */
+justify-content: center;
+    
+}
+
+.enable{
+    border-radius: 40px;
+    color: #91C024;
+    background-color: #e6f4c4;
+    width:auto;
+    height:40px;
+    margin:auto;
+    padding-inline:10px;
+    justify-content: space-evenly;
+    display: flex;
+    /* gap: 5px; */
+    align-items: center;
+}
+
+
+/* .form1{position: absolute;
+    width: 234px;
+    height: 26px;
+    left: 502px;
+    top: 21px;
+    
+    background: rgba(41, 80, 81, 0.05);
+    border-radius: 5px;
+                
+} */
+.comnt{
+     position: absolute;
+width: 26px;
+height: 26px;
+left: 756px;
+top: 21px; 
+} 
+ .si{
+    /* position: absolute; */
+width: 14px;
+height: 14px;
+left: 508px;
+top: 27px;
+
+}
+.not{
+     position: absolute;
+width: 26px;
+height: 26px;
+left: 803px;
+top: 21px; 
+
+}
+.name{
+     /* position: absolute; */
+width: 31px;
+height: 11px;
+left: 904px;
+top: 27px;
+
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 12px;
+line-height: 16px;
+
+color: #000000; 
+
+}
+ 
+.icon{
+    padding-left: 25px;
+  background: url("https://static.thenounproject.com/png/101791-200.png") no-repeat left;
+  background-size: 20px;
+  margin-left: 10px; 
+    border:groove;
+}
+.img3{
+    /* flex: 2;
+width: 26px;
+height: 26px;
+left: 943px;
+top: 21px;  */
+margin-left: 0px;
+
+
+}
+.headbox{
+    
+    width: 41%;
+    display: flex;
+    /* justify-content: space-between; */
+    /* flex: 1 0 1; */
+    border: none;
+    margin-left: 3%;
+} 
+
+/* .headbox > div {
+    /* margin-right: 20px;  
+} */
+
+.cont > div {
+    margin-right: 10px;
+        margin-left: 10px; }
+.cont1 > div {
+    margin-right: 20px; 
+}
+
+.left{
+    border: none;
+    width: 24%;
+}
+
+.name {
+    margin-left: auto; 
+}
+.box:focus {
+  /* Focused effect styles */
+  outline: none;
+  /* box-shadow: 0 0 5px #007bff; */
+  /* background-color:  #91C024;; */
+  background-color: #91C024;
+}
+form{
+    border:none ;
+
+}
+.search{
+    background-color:  rgba(41, 80, 81, 0.05);
+    border-radius: 8px;
+    border:none;
+    width: 314px;
+}
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+   
+    font-size: 13px;
+}

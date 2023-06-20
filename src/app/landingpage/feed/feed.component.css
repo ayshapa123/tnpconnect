@@ -1,0 +1,89 @@
+.full{
+    /* overflow: hidden; */
+    /* border: solid 1px; */
+    padding: 0%;
+    /* height: 0%; */
+    /* width: 0%; */
+}
+.main{
+    /* width: 10%;
+    background-color:white;
+    height: auto;
+    border-radius: 15px;
+    margin: 41px 26px; */
+    /* width: 133%; */
+    background-color: white;
+    height: auto;
+    border-radius: 15px;
+    /* margin: 58px 26px; */
+    margin: 24px -21px;
+    width: 100%;
+
+}
+
+
+.ellipse{
+    width:fit-content;
+    margin-left: 18%;
+}
+.ellipse1{
+    margin-left: 18%;
+}
+.box{
+    border:none ;
+    border-bottom: 1px groove;
+}
+.like{
+    width:0px;
+}
+.comment{
+    background-color: #e4eeef;
+    border-radius: 5px;
+    border:none;
+    /* width: 342px; */
+}
+.icon{
+    width:10px;
+    height:10px;
+}
+.view{
+    border-radius: 15px;
+color: #91C024;
+    border:2px solid;
+    justify-content: center;
+    text-align: center;
+    width: auto;
+}
+.view1{
+    border-radius: 15px;
+color: #91C024;
+    border:2px solid;
+    justify-content: center;
+    text-align: center;
+    width: 68%;
+    margin-left: 74px;
+    padding: 4px;
+    height: 0%;
+}
+.po{
+    margin: 0%;
+    padding: 0%;
+    border: none;
+    background-color: white;
+}
+.eventcontent {
+     width: 370px;   /* Adjust width according to your needs */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    /* display: flex; */
+  }
+  
+  .expanded {
+    white-space: initial;
+    overflow: initial;
+  }
+  .imgmargin{
+    margin-top:1%;
+    margin-left:-4%
+  }

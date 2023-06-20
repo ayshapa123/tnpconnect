@@ -1,0 +1,335 @@
+<div class="full">
+    <div class="main  container   justify-content-between mt-5  ">
+        <div class="photofeed mt-2">
+
+            <div class="d-flex">
+                <div class="name mt-2"><img class="ellipse " src="../../assets/Rectangle 18.png"></div>
+                <div class="container">
+                    <span class="ms-2 mt-2">Mathieuu LEAUBUERRE</span>
+                    <p> <span style="color: rgba(0, 0, 0, 0.25);">3 hrs ago </span>on TNP India</p>
+                </div>
+                <div class="d-flex"><span><img class="ellipse1" src="../../assets/bookmark.png"></span><span><img
+                            class="ellipse" src="../../assets/more-vertical.png"></span></div>
+            </div>
+
+        </div>
+        <div class="box">
+
+            <div>
+
+                <div class="eventcontent">
+                    <p class="font">In my younger and more vulnerable years my father gave me some advice that I've been
+                        turning over in my mind ever since.</p>
+                </div>
+                <div class="eventname" style="color:#91C024">#Tech #commerce #Logistics</div>
+            </div>
+
+        </div>
+        <div class="mt-2">
+            <div class="d-flex ms-2">
+                <div class="eventname d-flex"><img src="../../assets/thumbs-up.png"><span class="pgm ms-2">Likes</span>
+                </div>
+                <div class="eventname d-flex ms-2"><img src="../../assets/message-square.png"><span class="pgm ms-2"
+                        style="color: rgba(0, 0, 0, 0.25);">32 Comments</span></div>
+                <div class="eventname d-flex ms-2"><img src="../../assets/share-2.png"><span class="pgm ms-2"
+                        style="color: rgba(0, 0, 0, 0.25);">Share</span></div>
+
+                <!-- <div class="eventcontent"><p class="font">In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since.</p></div> -->
+            </div>
+            <div class="d-flex">
+                <div class="mt-2 d-flex">
+                    <div><img src="../../assets/Ellipse 5sonu.png"></div>
+                    <div class=" ms-2"><input class="comment" type="text" placeholder="Write your comments"></div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div class="date2 d-flex mb-4  ">
+            <div class="d-flex mt-2">
+                <div class="eventname"><img src="../../assets/Ellipse 5sonu.png"></div>
+                <div class="container">
+                    <div class="d-flex"><span>Kevin DURNN</span>
+                        <p class="ms-2" style="color: rgba(0, 0, 0, 0.25);"> 3 Min</p>
+                    </div>
+
+                    <p class="font">In my younger and more vulnerable years my father gave me some advice that I've been
+                        turning over in my mind ever since.</p>
+                    <div class="d-flex ">
+                        <div><img src="../../assets/heart.png"><span style="color: rgba(0, 0, 0, 0.25);">12</span></div>
+                        <div class="ms-5"><img src="../../assets/message-square.png"><span
+                                style="color: rgba(0, 0, 0, 0.25);">Reply</span></div>
+                        <div class="ms-5"><img src="../../assets/more-vertical.png"><span
+                                style="color: rgba(0, 0, 0, 0.25);"></span></div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="eventname"><img src="../../assets/Ellipse 5sonu.png"></div>
+                        <div class="container ms-2">
+                            <div class="d-flex"><span>You</span>
+                                <p class="ms-2" style="color: rgba(0, 0, 0, 0.25);"> 3 Min</p>
+                            </div>
+                            <p class="font">In my younger and more hgfhvmbhmhk .</p>
+                            <div class="d-flex">
+                                <div><img src="../../assets/heart.png"><span
+                                        style="color: rgba(0, 0, 0, 0.25);">1</span>
+                                </div>
+                                <div class="ms-5"><img src="../../assets/message-square.png"><span
+                                        style="color: rgba(0, 0, 0, 0.25);">Reply</span></div>
+                                <div class="ms-5"><img src="../../assets/more-vertical.png"><span
+                                        style="color: rgba(0, 0, 0, 0.25);"></span></div>
+                            </div>
+                            <div class="view mt-2 mb-4">
+                                <button class="po" style="color: #91C024;">View All Comments</button>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+    <!-- next feed -->
+    <!-- Post -->
+    <div class="main  container   justify-content-between mt-5  " *ngFor="let p of post,index as i">
+
+        <div class="photofeed mt-2">
+
+            <div class="d-flex">
+                <div class="name mt-2"><img class="ellipse " src="../../assets/Rectangle 18.png"></div>
+                <div class="container">
+                    <span class="ms-2 mt-2">{{p.name}}</span>
+                    <p> <span style="color: rgba(0, 0, 0, 0.25);">{{p.time}} hrs ago </span>on {{p.team}}</p>
+                </div>
+                <div class="d-flex"><span><img class="ellipse1" src="../../assets/bookmark.png"></span><span><img
+                            class="ellipse" src="../../assets/more-vertical.png"></span></div>
+            </div>
+
+        </div>
+
+        <div class="box">
+
+            <div>
+
+                <div class="eventcontent " [ngClass]="{ 'expanded': post[i].isExpanded}">
+                    {{post[i].content}}
+
+
+                </div>
+                <a (click)="toggleExpansion(i)">{{m}}</a>
+                <div class="eventname" style="color:#91C024" ><br>{{p.tags}}</div>
+            </div>
+
+        </div>
+
+        <div class="mt-2">
+            <div class="d-flex ms-2">
+                <div class="d-flex">
+                    <!-- like -->
+                    <div [style.color]="p.liked?'black':'grey' ">
+                        <i [ngClass]="p.liked?'fa solid fa-thumbs-up ':'fa regular fa-thumbs-up'"
+                            (click)="thumbsup(i)"></i>
+                    </div>
+                    <span class="pgm ms-2">{{p.likes}}</span>
+                    <span class="ms-2">Likes</span>
+                </div>
+                <div class="eventname d-flex ms-2"><i class="fa-regular fa-comment"></i><span class="pgm ms-2"
+                        style="color: rgba(0, 0, 0, 0.25);">{{p.comments.length}} Comments</span></div>
+                <div class="eventname d-flex ms-2"><img src="../../assets/share-2.png"><span class="pgm ms-2"
+                        style="color: rgba(0, 0, 0, 0.25);">Share</span></div>
+
+            </div>
+            <div class="d-flex">
+                <div class="mt-2 d-flex">
+                    <div><img src="../../assets/Ellipse 5sonu.png"></div>
+                    <form>
+                        <div class=" ms-2"><input class="comment" type="text" placeholder="Write your comments" #cmnt>
+                            <button class="po" (click)="view(cmnt.value,i)" type="reset">post</button>
+                        </div>
+                    </form>
+
+
+                </div>
+
+            </div>
+
+        </div>
+        <!-- comments -->
+        <div class="date2  mb-4  ">
+            <div>
+           
+            <div class="container ms-2" *ngFor="let c of p.comments,index as j">
+
+                <div *ngIf="this.post[i].allcomment || j < length1">
+                    <div class="d-flex" >
+                        <div class="imgmargin"><img src="../../assets/Ellipse 5sonu.png"></div>
+                        <span class="mt-2 ms-2">{{c.commentname}}</span>
+                        <p class="ms-2" style="color: rgba(0, 0, 0, 0.25);"> 3 Min</p>
+                    </div>
+
+                    <div class="container">
+                        <p class="font">{{c.comment}}</p>
+                    </div>
+                    <div class="d-flex">
+                        <div [style.color]="c.commentliked?'#91C024':'grey'">
+                            <i (click)="commentheart(i,j)"
+                             [ngClass]="c.commentliked?'fa-solid fa-heart':'fa-regular fa-heart'"
+                                ></i>{{c.likes}}
+                        </div>
+                        
+                        <div class="ms-5"><img src="../../assets/message-square.png"><span
+                            style="color: rgba(0, 0, 0, 0.25);" (click)="justreply()">Reply</span></div> 
+                            <div class="ms-2" *ngIf="newreply">
+                                <form>
+                                    <input class="comment" type="text" placeholder="Write replies" #reply>
+                                    <button class="po" type="reset">post</button>
+                                </form>
+                            </div>
+                        <!-- <div><p>Reply</p></div>
+                             <span>{{replys.length}}</span> -->
+                            
+                        <!-- <div class="ms-5"><i class="fa-solid fa-share-nodes"></i> Share</div> -->
+                    </div>
+                    <div class="ms-5"><span style="color: rgba(0, 0, 0, 0.25);" (click)="reply(i,j)">{{post[i].comments[j].replyfull?"Hide all replies":"View all replies"}}</span>
+                    </div>
+                    <!-- comment replies -->
+                   
+                    
+                    <div *ngFor="let r of c.replys,index as k">
+                        <div *ngIf="post[i].comments[j].replyfull|| k< maxtoshow">
+                            <p>{{r.replys}}</p>
+                        <div class="replyheader d-flex" >
+                            <div><img src="../../assets/Ellipse 5sonu.png"></div>
+                            <span class="ms-4">{{r.replyname}}</span>
+                            <p class="ms-2" style="color: rgba(0, 0, 0, 0.25);"> 3 Min</p>
+                        </div>
+                        <div class="container ms-5">
+                            <p>{{r.reply}}</p>
+                            <div class="d-flex">
+                                <div [style.color]="r.replyliked?'#91C024':'grey'">
+                                    <i (click)="replylike(i,j,k)" 
+                                    [ngClass]="r.replyliked?'fa-solid fa-heart':'fa-regular fa-heart'"></i>
+                                    {{r.likes}}
+                                </div>
+                                
+                               
+                            </div>
+                            <div class=""><span></span></div>
+                        </div>
+                       
+                    </div>
+                </div>
+                <!-- direct comment -->
+                <!-- <div class="d-flex mt-2" *ngIf="commentview">
+                    <div class="eventname"><img src="../../assets/Ellipse 5sonu.png"></div>
+                    <div class="container">
+                        <div class="d-flex"><span>Adil</span>
+                            <p class="ms-2" style="color: rgba(0, 0, 0, 0.25);"> 3 Min</p>
+                        </div>
+
+                    <div *ngFor="let i of arr">
+                        <p class="font">{{i}}</p>
+                        
+                        <div class="d-flex ">
+                            <div><img src="../../assets/heart.png"><span style="color: rgba(0, 0, 0, 0.25);">12</span></div>
+                            <div class="ms-5"><img src="../../assets/message-square.png"><span
+                                    style="color: rgba(0, 0, 0, 0.25);">Reply</span></div>
+                            <div class="ms-5"><img src="../../assets/more-vertical.png"><span
+                                    style="color: rgba(0, 0, 0, 0.25);"></span></div>
+                        </div>
+                    </div>
+                    </div>
+                    </div> -->
+                    <!-- <div class="d-flex">
+                    <div><img src="../../assets/heart.png"><span style="color: rgba(0, 0, 0, 0.25);">1</span></div>
+                    <div class="ms-5"><span style="color: rgba(0, 0, 0, 0.25);" (click)="reply()">Reply</span></div>
+                    <div class=" ms-2" *ngIf="replyfull">
+                        <form><input class="comment" type="text" placeholder="Write your comments" #reply>
+                            <button class="po" (click)="replyfunction(reply.value)" type="reset">post</button>
+                        </form>
+                        <div *ngFor="let i of replyarr">
+                            <p>{{i}}</p>
+                        </div>
+                        <div class="d-flex">
+                            <div><img src="../../assets/heart.png"><span style="color: rgba(0, 0, 0, 0.25);">1</span>
+                            </div>
+                            <div class="ms-5"><img src="../../assets/message-square.png"><span
+                                    style="color: rgba(0, 0, 0, 0.25);" (click)="reply2()">Reply</span></div>
+
+
+                            <div class="ms-5"><img src="../../assets/more-vertical.png"><span
+                                    style="color: rgba(0, 0, 0, 0.25);"></span></div>
+                        </div>
+                        <div *ngIf="newreply">
+                            <form><input class="comment" type="text" placeholder="Write your comments" #reply1>
+                                <button class="po" (click)="replyfunction1(reply1.value)" type="reset">post</button>
+                            </form>
+                            <div *ngFor="let a of replyarr1">
+                                <p>{{a}}</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="container ms-2" *ngIf="show">
+                        <div class="d-flex"><span>You</span>
+                            <p class="ms-2" style="color: rgba(0, 0, 0, 0.25);"> 3 Min</p>
+                        </div>
+                        <div *ngFor="let i of arr">
+                            <p class="font">{{i}}</p>
+                        </div>
+                        
+
+                        <div class="d-flex">
+                            <div><img src="../../assets/heart.png"><span style="color: rgba(0, 0, 0, 0.25);">1</span>
+                            </div>
+                            <div class="ms-5"><img src="../../assets/message-square.png"><span
+                                    style="color: rgba(0, 0, 0, 0.25);">Reply</span></div>
+                            <div class="ms-5"><img src="../../assets/more-vertical.png"><span
+                                    style="color: rgba(0, 0, 0, 0.25);"></span></div>
+                        </div>
+
+
+
+
+                    </div>
+                    <div class="ms-5"><img src="../../assets/more-vertical.png"><span
+                            style="color: rgba(0, 0, 0, 0.25);"></span></div>
+                </div> -->
+
+                </div>
+            </div>
+           
+            <!-- <div class="view mt-2 mb-4">
+            <button class="po" style="color: #91C024;" (click)="allComments()">View All Comments</button>
+        </div>
+        <div class="container ms-2" *ngIf="show">
+            <div class="d-flex"><span>You</span>
+                <p class="ms-2" style="color: rgba(0, 0, 0, 0.25);"> 3 Min</p>
+            </div>
+            <div *ngFor="let i of arr">
+                <p class="font">{{i}}</p>
+            </div>
+           
+
+            <div class="d-flex">
+                <div><img src="../../assets/heart.png"><span style="color: rgba(0, 0, 0, 0.25);">1</span></div>
+                <div class="ms-5"><img src="../../assets/message-square.png"><span
+                        style="color: rgba(0, 0, 0, 0.25);">Reply</span></div>
+                <div class="ms-5"><img src="../../assets/more-vertical.png"><span
+                        style="color: rgba(0, 0, 0, 0.25);"></span></div>
+            </div> -->
+
+            </div>
+            <div class="view1 mt-2 mb-6" >
+                <button class="po" style="color: #91C024;" (click)="toggleallComments(i)">{{post[i].allcomment?"Hide All Comments":"View all Comments"}}
+                    </button>
+            </div>
+        </div>
+        
+    </div>
+</div>
