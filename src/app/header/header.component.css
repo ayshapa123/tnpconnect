@@ -7,11 +7,14 @@
 
 .head{
 width: 100%;
+position: sticky;
 height: 90px;
+/* z-index: 1000; */
 /* justify-content: space-around; */
 align-items: center;
 box-shadow: 0px 1px 40px rgba(0, 0, 0, 0.05);
 display: flex;
+top: 0px;
 }
 .img1{
     /* flex: 2; */

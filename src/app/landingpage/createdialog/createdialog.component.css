@@ -1,0 +1,21 @@
+.Create{
+    background-color: #202020;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    z-index: 2;
+
+}
+    
+
+.forms{
+    background-color: white; 
+     top: 50px;
+    bottom: 50px;
+    height: 40%;
+    width:40%;
+    z-index: 5;
+}
+.input{
+border:none;
+}

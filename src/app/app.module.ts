@@ -8,6 +8,10 @@ import { LandingpageComponent } from './landingpage/landingpage.component';
 import { AnnouncementComponent } from './landingpage/announcement/announcement.component';
 import { PostComponent } from './landingpage/post/post.component';
 import { FeedComponent } from './landingpage/feed/feed.component';
+import { Public3Module } from './public3/public3.module';
+import { CreatedialogComponent } from './createdialog/createdialog.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import { DialogComponent } from './dialog/dialog.component';
 
 @NgModule({
   declarations: [
@@ -17,12 +21,17 @@ import { FeedComponent } from './landingpage/feed/feed.component';
     AnnouncementComponent,
     PostComponent,
     FeedComponent,
+    CreatedialogComponent,
+    DialogComponent,
+   
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    Public3Module,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

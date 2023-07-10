@@ -40,6 +40,8 @@
 .po{
     margin: 0%;
     padding: 0%;
+    border: none;
+    background-color: white;
 }
 .time{
     text-align: center;

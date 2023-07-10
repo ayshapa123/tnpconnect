@@ -4,7 +4,6 @@
     </div>
     <!-- <div class="cont"> -->
         <div class="headbox d-flex ">
-
             <div [ngClass]="hoverOrClick.home?'enable':'box'">
                 <i class="fa fa-home " (mouseenter)="showhome=true" (mouseleave)="showhome=false"
                     (click)="selected('home')">
@@ -23,7 +22,6 @@
 
                 <i class="fa fa-calendar-o" aria-hidden="true"></i>
                 <span class="ms-2" *ngIf="showevents || hoverOrClick.events">Events</span>
-
             </div>
             <input type="text" name="text" placeholder="Search for People,Posts,Communities,Events....."
             class="icon search">
